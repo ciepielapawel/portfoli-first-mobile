@@ -1,0 +1,1151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Oswald', sans-serif;
+}
+
+.wrapper {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    background-image: url("images/computer-2982270_640.jpg");
+    background-repeat: no-repeat;
+    background-position: 25%;
+    background-size: cover;
+    position: relative;
+}
+
+.wrap-nav {
+    background-color: rgba(0, 0, 0, .8);
+    height: 60px;
+}
+
+.wrap-nav h1 {
+    color: white;
+    line-height: 60px;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding-left: 25px;
+    letter-spacing: 1px;
+}
+
+.wrap-nav .hamburger {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: white;
+    font-size: 24px;
+}
+
+.navigation {
+    position: absolute;
+    top: 60px;
+    left: -100%;
+    text-align: center;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, .5);
+    transition: 0.3s linear;
+    z-index: 1;
+}
+
+.navigation li {
+    list-style: none;
+}
+
+.navigation a {
+    display: block;
+    height: 60px;
+    line-height: 60px;
+    color: white;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.fa-times {
+    display: none;
+}
+
+.motto {
+    width: 90%;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.motto h1 {
+    font-size: 30px;
+    letter-spacing: 1px;
+}
+
+.motto h2 {
+    font-size: 20px;
+}
+
+.motto p {
+    font-size: 16px;
+}
+
+header button {
+    position: absolute;
+    background: transparent;
+    font-size: 18px;
+    border: 1px solid black;
+    border-radius: 20px;
+    width: 70%;
+    height: 8%;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    font-weight: 700;
+    transition: 0.3s linear;
+}
+
+@media (min-width: 360px) {
+    .wrap-nav .logo h1 {
+        font-size: 28px;
+    }
+
+    .wrap-nav .hamburger {
+        top: 16px;
+        font-size: 28px;
+    }
+
+    .navigation a {
+        height: 70px;
+        line-height: 70px;
+        font-size: 20px;
+    }
+
+    .motto {
+        top: 46%;
+    }
+
+    .motto h1 {
+        font-size: 36px;
+        letter-spacing: 1px;
+    }
+
+    .motto h2 {
+        font-size: 24px;
+    }
+
+    .motto p {
+        font-size: 20px;
+    }
+
+    header button {
+        font-size: 26px;
+        width: 80%;
+        height: 8%;
+    }
+}
+
+@media (min-width: 768px) {
+
+    .wrap-nav {
+        height: 100px;
+    }
+
+    .wrap-nav .logo h1 {
+        line-height: 100px;
+        font-size: 36px;
+    }
+
+    .wrap-nav .hamburger {
+        top: 32px;
+        font-size: 36px;
+    }
+
+    .navigation {
+        top: 100px;
+    }
+
+    .navigation a {
+        height: 90px;
+        line-height: 90px;
+    }
+
+    .motto {
+        width: 60%;
+    }
+
+    .motto h1 {
+        font-size: 50px;
+    }
+
+    .motto h2 {
+        font-size: 36px;
+    }
+
+    .motto p {
+        font-size: 24px;
+    }
+
+    header button {
+
+        font-size: 32px;
+        border: 2px solid black;
+        width: 50%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .wrap-nav .logo h1 {
+        font-size: 56px;
+        padding-left: 50px;
+    }
+
+    .wrap-nav .hamburger {
+        right: 40px;
+        top: 22px;
+        font-size: 50px;
+    }
+
+    .navigation {
+        top: 100px;
+    }
+
+    .navigation a {
+        height: 100px;
+        line-height: 100px;
+        font-size: 30px;
+    }
+
+    .motto {
+        width: 75%;
+    }
+
+    .motto h1 {
+        font-size: 68px;
+    }
+
+    .motto h2 {
+        font-size: 58px;
+    }
+
+    .motto p {
+        font-size: 32px;
+    }
+
+    header button {
+        font-size: 40px;
+        width: 50%;
+        height: 6%;
+    }
+}
+
+@media (orientation: landscape) {
+    .wrap-nav .logo h1 {
+        font-size: 24px;
+    }
+
+    .navigation a {
+        height: 42px;
+        line-height: 42px;
+
+    }
+
+    .motto {
+        width: 70%;
+    }
+
+    .motto h1 {
+        font-size: 34px;
+
+    }
+
+    .motto h2 {
+        font-size: 22px;
+
+    }
+
+    .motto p {
+        font-size: 18px;
+    }
+
+    header button {
+        font-size: 20px;
+        width: 50%;
+        height: 12%;
+        top: 82%;
+    }
+}
+
+@media (min-width: 1240px) {
+    .wrap-nav {
+        height: 80px;
+        display: flex;
+    }
+
+    .wrap-nav .logo {
+        flex-basis: 30%;
+    }
+
+    .wrap-nav .logo h1 {
+        line-height: 80px;
+        font-size: 30px;
+    }
+
+    .wrap-nav .hamburger {
+        display: none;
+    }
+
+    .navigation {
+        position: static;
+        display: flex;
+        justify-content: flex-end;
+        background-color: transparent;
+    }
+
+    .navigation ul li {
+        display: flex;
+
+    }
+
+    .navigation ul li a {
+        font-size: 14px;
+        height: 80px;
+        line-height: 80px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .navigation ul li a:hover {
+        color: black;
+        background-color: rgba(178, 178, 178, 0.45);
+    }
+
+    .motto {
+        width: 40%;
+    }
+
+    .motto h1 {
+        font-size: 56px;
+    }
+
+    .motto h2 {
+        font-size: 28px;
+        padding-bottom: 5px;
+    }
+
+    .motto p {
+        font-size: 20px;
+    }
+
+    header button {
+        font-size: 32px;
+        width: 30%;
+        height: 10%;
+    }
+}
+
+/* wywołanie klasy on */
+.navigation.on {
+    left: 0;
+}
+
+header .fas {
+    display: none;
+}
+
+i.on {
+    display: block;
+}
+
+
+/* style o mnie*/
+.aboutme {
+    text-align: center;
+    background-color: rgb(199, 199, 199);
+}
+
+.aboutme h2 {
+    text-transform: uppercase;
+    font-size: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.aboutme img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: 0px 6px 50px 1px rgba(0, 0, 0, 0.75);
+}
+
+.aboutme p {
+    font-size: 14px;
+    padding-bottom: 30px;
+    margin: 0 5%;
+}
+
+@media (min-width: 360px) {
+
+    .aboutme h2 {
+        font-size: 28px;
+        padding-bottom: 15px;
+    }
+
+    .aboutme img {
+        width: 220px;
+        height: 220px;
+    }
+
+    .aboutme p {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 768px) {
+    .aboutme {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .aboutme h2 {
+        font-size: 36px;
+        padding-bottom: 35px;
+    }
+
+    .aboutme p {
+        font-size: 24px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .aboutme h2 {
+        font-size: 50px;
+    }
+
+    .aboutme img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .aboutme p {
+        font-size: 38px;
+    }
+}
+
+@media (orientation: landscape) {
+    .aboutme h2 {
+        font-size: 26px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .aboutme img {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        box-shadow: 0px 6px 50px 1px rgba(0, 0, 0, 0.75);
+    }
+
+    .aboutme p {
+        font-size: 16px;
+        padding-bottom: 20px;
+    }
+}
+
+@media (min-width: 1240px) {
+
+    .aboutme h2 {
+        font-size: 54px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .aboutme img {
+        width: 280px;
+        height: 280px;
+    }
+
+    .aboutme p {
+        width: 70%;
+        margin: 0 auto;
+        font-size: 18px;
+    }
+}
+
+/* style dla umiejętności */
+.skills {
+    text-align: center;
+}
+
+.skills .skills-item {
+    margin: 0 5%;
+    padding-top: 30px;
+    border-bottom: 1px solid black;
+}
+
+.skills h2 {
+    text-transform: uppercase;
+    font-size: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.skills img {
+    max-width: 90%;
+}
+
+.skills h3 {
+    font-size: 18px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.skills p {
+    font-size: 14px;
+    padding-bottom: 30px;
+}
+
+@media (min-width: 360px) {
+
+    .skills h2 {
+        font-size: 30px;
+    }
+
+    .skills h3 {
+        font-size: 22px;
+    }
+
+    .skills p {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 768px) {
+
+    .skills h2 {
+        font-size: 36px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .skills h3 {
+        font-size: 36px;
+    }
+
+    .skills p {
+        font-size: 24px;
+    }
+
+}
+
+@media (min-width: 1024px) {
+
+    .skills h2 {
+        font-size: 60px;
+    }
+
+    .skills img {
+        max-width: 90%;
+    }
+
+    .skills h3 {
+        font-size: 50px;
+    }
+
+    .skills p {
+        font-size: 38px;
+        padding-bottom: 60px;
+    }
+}
+
+@media (orientation: landscape) {
+    .skills h2 {
+        font-size: 32px;
+    }
+
+    .skills img {
+        max-width: 60%;
+    }
+
+    .skills h3 {
+        font-size: 24px;
+    }
+
+    .skills p {
+        font-size: 18px;
+        padding-bottom: 30px;
+    }
+}
+
+@media (min-width: 1240px) {
+    .skills {
+        margin: 0 auto;
+        max-width: 90%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .skills .skills-items {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .skills .skills-item {
+        margin: 0 2%;
+    }
+
+}
+
+/* Moje projekty */
+.projects {
+    margin-top: 30px;
+    text-align: center;
+    background-color: #000;
+}
+
+.projects h2 {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.projects p {
+    color: #fff;
+    line-height: 30px;
+}
+
+.projects .projects-item img {
+    max-width: 100%;
+}
+
+@media (min-width: 360px) {
+
+
+    .projects h2 {
+        font-size: 30px;
+    }
+
+    .projects p {
+        line-height: 34px;
+    }
+}
+
+@media (min-width: 768px) {
+
+    .projects h2 {
+        font-size: 36px;
+    }
+
+    .projects p {
+        font-size: 24px;
+        line-height: 60px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .projects h2 {
+        font-size: 60px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .projects p {
+        font-size: 40px;
+    }
+
+    .projects .projects-item {
+        padding-bottom: 30px;
+    }
+}
+
+@media (min-width: 1240px) {
+    .projects {
+        display: flex;
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .projects h2 {
+        font-size: 50px;
+    }
+
+    .projects .projekts-wrap {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .projects p {
+        font-size: 24px;
+    }
+
+    .projects .projekts-wrap .projects-item {
+        max-width: 45%;
+    }
+
+    .projects .projects-item img {
+        max-width: 100%;
+    }
+}
+
+/*@media (orientation:landscape) {
+    .projects h2 {
+        font-size: 32px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .projects p {
+        font-size: 16px;
+        line-height: 36px;
+    }
+}*/
+
+/* style dla hobby*/
+.hobby {
+    text-align: center;
+    background-color: rgb(199, 199, 199);
+}
+
+.hobby h1 {
+    padding: 20px 0;
+    font-size: 30px;
+    letter-spacing: 1px;
+    color: white;
+}
+
+.hobby i {
+    font-size: 40px;
+    padding: 16px 0;
+    color: white;
+}
+
+.hobby h3 {
+    text-transform: uppercase;
+    color: white;
+}
+
+.hobby .hobby-bg {
+    height: 200px;
+    background-image: url(images/sport.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+
+}
+
+@media (min-width: 360px) {
+    .hobby {
+        padding-bottom: 20px;
+    }
+
+    .hobby i {
+        font-size: 44px;
+        padding: 6px 0;
+    }
+
+    .hobby h3 {
+        font-size: 24px;
+        padding-bottom: 6px;
+    }
+
+    .hobby .hobby-item {
+        padding: 5px 10px;
+    }
+}
+
+@media (min-width: 768px) {
+    .hobby h1 {
+        font-size: 36px;
+    }
+
+    .hobby .hobby-item {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .hobby i {
+        font-size: 50px;
+        padding: 16px 0;
+        color: white;
+    }
+
+    .hobby h3 {
+        font-size: 30px;
+    }
+
+    .hobby .hobby-bg {
+        height: 300px;
+    }
+
+    .hobby .hobby-item p {
+        font-size: 24px;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    .hobby h1 {
+        font-size: 60px;
+    }
+
+    .hobby i {
+        font-size: 120px;
+        padding: 20px 0;
+    }
+
+    .hobby h3 {
+        font-size: 50px;
+    }
+
+    .hobby .hobby-item p {
+        font-size: 32px;
+        padding-bottom: 50px;
+    }
+}
+
+@media (orientation: landscape) {
+
+    .hobby h1 {
+        padding: 6px 0;
+        font-size: 32px;
+    }
+
+    .hobby .hobby-item {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}
+
+@media (min-width: 1240px) {
+    .hobby {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hobby h1 {
+        font-size: 42px;
+    }
+
+    .hobby .hobby-wrap {
+        display: flex;
+    }
+
+    .hobby .hobby-wrap .hobby-item i {
+        font-size: 80px;
+    }
+
+    .hobby .hobby-wrap .hobby-item h3 {
+        font-size: 36px;
+    }
+
+    .hobby .hobby-wrap .hobby-item p {
+        font-size: 24px;
+    }
+}
+
+/* style dla contact*/
+.contact {
+    background-color: #000;
+    padding: 30px 10px;
+}
+
+.contact h1 {
+    color: white;
+    font-size: 24px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.contact input,
+.contact button,
+.contact textarea {
+    width: 100%;
+    font-size: 12px;
+    padding: 5px;
+    font-family: oswald, sans-serif;
+    margin-bottom: 22px;
+}
+
+.contact input {
+    height: 36px;
+}
+
+.contact textarea {
+    height: 120px
+}
+
+.contact button {
+    font-size: 14px;
+    line-height: 40px;
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+}
+
+.socials {
+    color: white;
+    padding: 5px;
+}
+
+.socials .social {
+    font-size: 18px;
+    display: flex;
+}
+
+.socials .social p {
+    line-height: 50px;
+}
+
+.socials .social i {
+    padding: 10px;
+}
+
+.socials .social i.fab.fa-facebook,
+.socials .social i.far.fa-envelope,
+.socials .social i.fab.fa-linkedin {
+    font-size: 30px;
+}
+
+/*.socials .social i.fab.fa-facebook {
+    color:
+}*/
+@media (min-width: 360px) {
+    .contact {
+        padding: 30px 20px;
+    }
+}
+
+@media (min-width: 768px) {
+
+    .contact h1 {
+        font-size: 36px;
+        padding-bottom: 40px;
+    }
+
+    .contact input,
+    .contact button,
+    .contact textarea {
+        font-size: 18px;
+    }
+
+    .contact input {
+        height: 42px;
+    }
+
+    .contact textarea {
+        height: 140px
+    }
+
+    .contact button {
+        font-size: 24px;
+    }
+
+    .socials .social {
+        font-size: 24px;
+    }
+
+
+    .socials .social i.fab.fa-facebook,
+    .socials .social i.far.fa-envelope,
+    .socials .social i.fab.fa-linkedin {
+        font-size: 34px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .contact h1 {
+        font-size: 60px;
+        padding-bottom: 20px;
+    }
+
+    .contact input,
+    .contact button,
+    .contact textarea {
+        font-size: 24px;
+        padding: 20px;
+    }
+
+    .contact input {
+        height: 60px;
+    }
+
+    .contact textarea {
+        height: 180px
+    }
+
+    .contact button {
+        font-size: 24px;
+    }
+
+    .socials .social p {
+        font-size: 40px;
+        padding-left: 20px;
+    }
+
+    .socials .social {
+        align-items: center;
+    }
+
+    .socials .social i.fab.fa-facebook,
+    .socials .social i.far.fa-envelope,
+    .socials .social i.fab.fa-linkedin {
+        font-size: 60px;
+    }
+}
+
+/*@media (orientation: landscape) {
+    .contact {
+        padding: 10px 5px;
+    }
+
+    .contact h1 {
+        font-size: 32px;
+    }
+
+    .contact form {
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    .contact input {
+        height: 36px;
+    }
+
+    .contact button {
+        font-size: 18px;
+        line-height: 36px;
+    }
+
+    .socials {
+        color: white;
+        padding: 5px;
+    }
+
+    .socials .social {
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+*/
+@media (min-width: 1240px) {
+    .contact {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact .contact-wrap form,
+    .contact .contact-wrap .socials {
+        max-width: 40%;
+    }
+
+    .contact .contact-wrap form {
+        padding-right: 50px;
+    }
+
+    .contact .contact-wrap .socials {
+        padding-left: 50px;
+        padding-top: 25px;
+    }
+
+    .contact .contact-wrap {
+        display: flex;
+        justify-content: center;
+    }
+
+    .contact h1 {
+        font-size: 42px;
+    }
+
+    .contact input,
+    .contact button,
+    .contact textarea {
+        width: 100%;
+        font-size: 16px;
+        padding: 14px;
+    }
+
+    .contact input {
+        height: 28px;
+    }
+
+    .contact textarea {
+        height: 80px;
+    }
+
+    .contact button {
+        font-size: 18px;
+        line-height: 10px;
+    }
+
+    .socials .social {
+        font-size: 18px;
+        display: flex;
+    }
+
+    .socials .social p {
+        font-size: 24px;
+        line-height: 50px;
+    }
+
+    .socials .social i {
+        padding: 10px;
+    }
+
+    .socials .social i.fab.fa-facebook,
+    .socials .social i.far.fa-envelope,
+    .socials .social i.fab.fa-linkedin {
+        font-size: 24px;
+    }
+}
+
+/* style dla footer*/
+footer {
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    line-height: 60px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background-color: rgb(50, 58, 83);
+}
+
+@media(min-width: 360px) {
+    footer {
+        font-size: 32px;
+        line-height: 80px;
+    }
+
+    @media(min-width: 1024px) {
+        footer {
+            font-size: 50px;
+            line-height: 80px;
+        }
+    }
+
+    @media(min-width: 1240px) {
+        footer {
+            font-size: 32px;
+            line-height: 60px;
+        }
+    }
+}
